@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Task</title>
+</head>
+<body>
+
+<form method="post" action=" ">
+	{% csrf_token %} 
+    <p>Are you sure you want to delete "{{ object }}"?</p> 
+    <input type="submit" value="Confirm"> 
+</form>
+</body>
+</html>
